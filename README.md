@@ -10,3 +10,5 @@ El Estándar de cifrado avanzado (AES) es un algoritmo de cifrado de clave simé
 AES funciona realizando una serie de rondas en los datos, cada una de las cuales incluye una operación de sustitución y una operación de permutación. La operación de sustitución reemplaza cada bit de los datos con un bit nuevo, basado en una clave secreta. La operación de permutación reorganiza los bits en los datos. El número de rondas en AES depende del tamaño de la clave. Para una clave de 128 bits, hay 10 rondas; para una clave de 192 bits, hay 12 rondas; y para una clave de 256 bits, hay 14 rondas. [2] 
 
 AES es un algoritmo altamente eficiente y se puede implementar tanto en hardware como en software. Se usa ampliamente en una variedad de aplicaciones, incluido el cifrado de datos, el cifrado de archivos y la seguridad de una red. 
+
+Normalmente los ingenieros que han trabajado AES lo asumen como una caja negra donde se confía en la salida dada la popularidad del algoritmo, pero pocos se atreven a estudiar su estructura interna, esto se debe a que el algoritmo AES está diseñado para ser muy difícil de descifrar.
