@@ -11,4 +11,4 @@ AES funciona realizando una serie de rondas en los datos, cada una de las cuales
 
 AES es un algoritmo altamente eficiente y se puede implementar tanto en hardware como en software. Se usa ampliamente en una variedad de aplicaciones, incluido el cifrado de datos, el cifrado de archivos y la seguridad de una red. 
 
-Normalmente los ingenieros que han trabajado AES lo asumen como una caja negra donde se confía en la salida dada la popularidad del algoritmo, pero pocos se atreven a estudiar su estructura interna, esto se debe a que el algoritmo AES está diseñado para ser muy difícil de descifrar.
+Normalmente los ingenieros que han trabajado AES lo asumen como una caja negra donde se confía en la salida dada la popularidad del algoritmo, pero pocos se atreven a estudiar su estructura interna, esto se debe a que el algoritmo AES está diseñado para ser muy difícil de descifrar. El algoritmo utiliza una serie de técnicas diferentes para dificultar que los atacantes encuentren la clave.  
