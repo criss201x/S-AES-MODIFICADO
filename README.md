@@ -16,3 +16,5 @@ Normalmente los ingenieros que han trabajado AES lo asumen como una caja negra d
 AES utiliza una serie de técnicas diferentes, como sustitución, permutación y S-boxes. Esto hace que sea más difícil para los atacantes encontrar patrones en los datos.  Las claves de ronda se generan utilizando un algoritmo complejo. Esto hace que sea más difícil para los atacantes adivinar las claves. 
 
 Aprender AES podría ser desafiante de aprender al menos en poco tiempo, ante tal dificultad fue diseñado S-AES como una herramienta de enseñanza para ayudar a los estudiantes a aprender sobre los principios del cifrado simétrico. S-AES es mucho más simple que AES, pero aun así proporciona una buena introducción a los conceptos a los conceptos de cifrado simétrico.  
+
+## Revisión de la literatura 
