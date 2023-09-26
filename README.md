@@ -18,3 +18,5 @@ AES utiliza una serie de técnicas diferentes, como sustitución, permutación y
 Aprender AES podría ser desafiante de aprender al menos en poco tiempo, ante tal dificultad fue diseñado S-AES como una herramienta de enseñanza para ayudar a los estudiantes a aprender sobre los principios del cifrado simétrico. S-AES es mucho más simple que AES, pero aun así proporciona una buena introducción a los conceptos a los conceptos de cifrado simétrico.  
 
 ## Revisión de la literatura 
+
+Si bien es cierto que existe una versión simplificada del cifrado AES esto no quiere decir que sea la única solución de desarrollo de un algoritmo de práctica, incluso existen algoritmos basados en el mismo S-AES que buscan reducir toda vía más la complejidad de aprendizaje del cifrado simétrico, por mencionar tres referentes que han desarrollado propuestas similares a S-AES se tiene:  
