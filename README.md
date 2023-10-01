@@ -20,3 +20,5 @@ Aprender AES podría ser desafiante de aprender al menos en poco tiempo, ante ta
 ## Revisión de la literatura 
 
 Si bien es cierto que existe una versión simplificada del cifrado AES esto no quiere decir que sea la única solución de desarrollo de un algoritmo de práctica, incluso existen algoritmos basados en el mismo S-AES que buscan reducir toda vía más la complejidad de aprendizaje del cifrado simétrico, por mencionar tres referentes que han desarrollado propuestas similares a S-AES se tiene:  
+
+El artículo "Un algoritmo de cifrado simple y eficiente basado en S-AES" de M. A. Alghamdi y A. A.
