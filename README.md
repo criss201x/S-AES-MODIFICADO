@@ -24,3 +24,5 @@ Si bien es cierto que existe una versión simplificada del cifrado AES esto no q
 El artículo "Un algoritmo de cifrado simple y eficiente basado en S-AES" de M. A. Alghamdi y A. A. Khan (2014) propone un nuevo algoritmo de cifrado basado en S-AES. El algoritmo propuesto es más simple y más eficiente que S-AES, al mismo tiempo que proporciona un buen nivel de seguridad. El algoritmo propuesto se llama S-AES-Lite. Utiliza un tamaño de bloque de 32 bits y un tamaño de clave de 12 bits y Tiene 4 rondas [3].
 
 Los autores del artículo evaluaron la seguridad de S-AES-Lite frente a varios ataques. Descubrieron que S-AES-Lite es seguro contra todos los ataques conocidos. 
+
+Los autores del artículo también compararon el rendimiento de S-AES-Lite con S-AES y AES.
