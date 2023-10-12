@@ -26,3 +26,5 @@ El artículo "Un algoritmo de cifrado simple y eficiente basado en S-AES" de M. 
 Los autores del artículo evaluaron la seguridad de S-AES-Lite frente a varios ataques. Descubrieron que S-AES-Lite es seguro contra todos los ataques conocidos. 
 
 Los autores del artículo también compararon el rendimiento de S-AES-Lite con S-AES y AES. Descubrieron que S-AES-Lite es más rápido que S-AES y AES. S-AES-Lite también se puede utilizar como una herramienta de enseñanza o como un algoritmo de cifrado ligero para dispositivos con recursos limitados.
+
+Por otro lado, el artículo "Un nuevo algoritmo de cifrado ligero basado en S-AES" de S. M. Alotaibi y A. A. Khan (2015) propone un nuevo algoritmo de cifrado ligero llamado S-AES-LW.
