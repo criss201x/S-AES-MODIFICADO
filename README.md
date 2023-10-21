@@ -27,4 +27,4 @@ Los autores del artículo evaluaron la seguridad de S-AES-Lite frente a varios a
 
 Los autores del artículo también compararon el rendimiento de S-AES-Lite con S-AES y AES. Descubrieron que S-AES-Lite es más rápido que S-AES y AES. S-AES-Lite también se puede utilizar como una herramienta de enseñanza o como un algoritmo de cifrado ligero para dispositivos con recursos limitados.
 
-Por otro lado, el artículo "Un nuevo algoritmo de cifrado ligero basado en S-AES" de S. M. Alotaibi y A. A. Khan (2015) propone un nuevo algoritmo de cifrado ligero llamado S-AES-LW. S-AES-LW es una versión más simplificada de S-AES. Utiliza un tamaño de bloque de 16 bits y un tamaño de clave de 8 bits.
+Por otro lado, el artículo "Un nuevo algoritmo de cifrado ligero basado en S-AES" de S. M. Alotaibi y A. A. Khan (2015) propone un nuevo algoritmo de cifrado ligero llamado S-AES-LW. S-AES-LW es una versión más simplificada de S-AES. Utiliza un tamaño de bloque de 16 bits y un tamaño de clave de 8 bits. Tiene 2 rondas, cada una de las cuales consta de una operación de sustitución y una operación de permutación.
