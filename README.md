@@ -29,4 +29,4 @@ Los autores del artículo también compararon el rendimiento de S-AES-Lite con S
 
 Por otro lado, el artículo "Un nuevo algoritmo de cifrado ligero basado en S-AES" de S. M. Alotaibi y A. A. Khan (2015) propone un nuevo algoritmo de cifrado ligero llamado S-AES-LW. S-AES-LW es una versión más simplificada de S-AES. Utiliza un tamaño de bloque de 16 bits y un tamaño de clave de 8 bits. Tiene 2 rondas, cada una de las cuales consta de una operación de sustitución y una operación de permutación. La operación de sustitución se basa en una tabla de búsqueda simple. La operación de permutación es una simple operación de intercambio de bits. Las claves redondas en S-AES-LW se generan a partir de la clave original utilizando un algoritmo simple [4].
 
-Los autores del artículo evaluaron la seguridad de S-AES-LW frente a una serie de ataques. Descubrieron que S-AES-LW es seguro contra todos los ataques conocidos.
+Los autores del artículo evaluaron la seguridad de S-AES-LW frente a una serie de ataques. Descubrieron que S-AES-LW es seguro contra todos los ataques conocidos. También compararon el rendimiento de S-AES-LW con S-AES-Lite y S-AES.
