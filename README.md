@@ -31,4 +31,5 @@ Por otro lado, el artículo "Un nuevo algoritmo de cifrado ligero basado en S-AE
 
 Los autores del artículo evaluaron la seguridad de S-AES-LW frente a una serie de ataques. Descubrieron que S-AES-LW es seguro contra todos los ataques conocidos. También compararon el rendimiento de S-AES-LW con S-AES-Lite y S-AES. Descubrieron que S-AES-LW es más rápido que S-AES-Lite y S-AES. 
 
-S-AES-LW es una buena opción para aplicaciones donde la simplicidad, la eficiencia y la ligereza son importantes.
+S-AES-LW es una buena opción para aplicaciones donde la simplicidad, la eficiencia y la ligereza son importantes. Por ejemplo, S-AES-LW se puede usar para cifrar datos en sistemas integrados, como dispositivos IoT. 
+ 
