@@ -36,4 +36,6 @@ S-AES-LW es una buena opción para aplicaciones donde la simplicidad, la eficien
 Finalmente, el documento "Un estudio comparativo de S-AES y otros algoritmos de cifrado" de M. A. Alghamdi y A. A. Khan (2016) compara S-AES con otros algoritmos de cifrado, como DES, 3DES y AES. El documento muestra que S-AES es más simple y eficiente que otros algoritmos de encriptación, al mismo tiempo que brinda un buen nivel de seguridad. El documento también muestra que S-AES es más seguro que DES y 3DES, pero no tan seguro como AES [5].
 
 En esta tabla que resume la comparación de S-AES con otros algoritmos de encriptación: 
- 
+
+
+ Caracteristica 
