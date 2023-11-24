@@ -37,5 +37,5 @@ Finalmente, el documento "Un estudio comparativo de S-AES y otros algoritmos de 
 
 En esta tabla que resume la comparación de S-AES con otros algoritmos de encriptación: 
 
-
- Caracteristica
+|Caracteritsticas |Grooviness|
+|-|-|
