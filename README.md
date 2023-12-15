@@ -40,4 +40,4 @@ En esta tabla que resume la comparación de S-AES con otros algoritmos de encrip
 
 | Caracteritsticas | S-AES | DES | 3DES | AES |
 |---|---|---|---|---|
-| Block size | 16 bits | Block size | Block size | Block size |
+| Block size | 16 bits | 64 bits | Block size | Block size |
