@@ -42,4 +42,4 @@ En esta tabla que resume la comparación de S-AES con otros algoritmos de encrip
 |---|---|---|---|---|
 | Block size | 16 bits | 64 bits | 64 bits | 128 bits |
 | Key size | 8 bits | 56 bits | 112 bits | 128 bits |
-| sdfsdf | qweqweqw | iopiopiop | bnbnmmbn | 4564567 |
+| Rondas  | qweqweqw | iopiopiop | bnbnmmbn | 4564567 |
