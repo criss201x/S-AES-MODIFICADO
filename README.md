@@ -44,3 +44,4 @@ En esta tabla que resume la comparación de S-AES con otros algoritmos de encrip
 | Key size | 8 bits | 56 bits | 112 bits | 128 bits |
 | Rondas  | 2 | 16 | 16 | 14 |
 | seguridad  | Buena | Buena | Buena | Excelente |
+| Eficiencia  | Very good | Good | Fair  | Good |
