@@ -45,3 +45,4 @@ En esta tabla que resume la comparación de S-AES con otros algoritmos de encrip
 | Rondas  | 2 | 16 | 16 | 14 |
 | seguridad  | Buena | Buena | Buena | Excelente |
 | Eficiencia  | Very good | Good | Fair  | Good |
+| Soporte  | Limited | Widespread | Widespread  | Widespread |
