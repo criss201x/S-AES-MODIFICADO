@@ -48,3 +48,5 @@ En esta tabla que resume la comparación de S-AES con otros algoritmos de encrip
 | Soporte  | Limited | Widespread | Widespread  | Widespread |
 
 Como se puede ver, S-AES es una buena opción para aplicaciones donde la simplicidad, la eficiencia y la ligereza son importantes. Sin embargo, si se necesita el más alto nivel de seguridad, AES es una mejor opción. 
+
+## Desarrollo de S-AES y S-AES modificado 
