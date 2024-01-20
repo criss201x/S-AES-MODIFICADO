@@ -54,3 +54,4 @@ Como se puede ver, S-AES es una buena opción para aplicaciones donde la simplic
 El S-AES utiliza operaciones básicas de cifrado, como sustitución no lineal, permutación y multiplicación en el campo de Galois, para proporcionar una capa de seguridad en la encriptación de datos.
 
 Para materializar el desarrollo del algoritmo en el código Typescript se definen las siguientes funciones y objetos en el código: 
+
