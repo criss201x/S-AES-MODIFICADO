@@ -57,4 +57,3 @@ Para materializar el desarrollo del algoritmo en el código Typescript se define
 
 - Boxes: Se definen dos matrices bidimensionales llamadas S_BOX_1 y S_BOX_2. Estas matrices se utilizan para realizar sustituciones no lineales en el proceso de encriptación y desencriptación.  
 
-
