@@ -56,4 +56,3 @@ El S-AES utiliza operaciones básicas de cifrado, como sustitución no lineal, p
 Para materializar el desarrollo del algoritmo en el código Typescript se definen las siguientes funciones y objetos en el código: 
 
 - Boxes: Se definen dos matrices bidimensionales llamadas S_BOX_1 y S_BOX_2. Estas matrices se utilizan para realizar sustituciones no lineales en el proceso de encriptación y desencriptación.  
-
