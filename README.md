@@ -59,4 +59,5 @@ Para materializar el desarrollo del algoritmo en el código Typescript se define
 - Función shiftRows: Esta función toma un estado (state) como entrada, que es una matriz de números. La función realiza un corrimiento de filas en el estado, cambiando la posición de ciertos elementos.  
 - Matrices de MixColumns: Se definen dos matrices bidimensionales llamadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. Estas matrices se utilizan en la operación MixColumns durante el proceso de encriptación y desencriptación.  
 - Constantes de KeyExpansion: Se define una matriz llamada ROUND_CONSTANTS que contiene constantes utilizadas en el proceso de expansión de clave.
-- Función padBlock: Esta función toma un bloque de números (block) como entrada y lo rellena con ceros hasta que tenga una longitud de 4 elementos.  
+- Función padBlock: Esta función toma un bloque de números (block) como entrada y lo rellena con ceros hasta que tenga una longitud de 4 elementos.
+- Función substituteNibbles: Esta función toma un nibble (4 bits) y una caja S (sBox) como entrada, y realiza una sustitución no lineal utilizando la caja S.  
