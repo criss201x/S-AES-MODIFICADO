@@ -61,3 +61,4 @@ Para materializar el desarrollo del algoritmo en el código Typescript se define
 - Constantes de KeyExpansion: Se define una matriz llamada ROUND_CONSTANTS que contiene constantes utilizadas en el proceso de expansión de clave.
 - Función padBlock: Esta función toma un bloque de números (block) como entrada y lo rellena con ceros hasta que tenga una longitud de 4 elementos.
 - Función substituteNibbles: Esta función toma un nibble (4 bits) y una caja S (sBox) como entrada, y realiza una sustitución no lineal utilizando la caja S.  
+- Función permuteNibbles: Esta función toma un nibble y una matriz de MixColumns (mixColumnsMatrix) como entrada, y realiza una permutación utilizando operaciones de multiplicación en el campo de Galois.
