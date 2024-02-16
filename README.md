@@ -62,3 +62,4 @@ Para materializar el desarrollo del algoritmo en el código Typescript se define
 - Función padBlock: Esta función toma un bloque de números (block) como entrada y lo rellena con ceros hasta que tenga una longitud de 4 elementos.
 - Función substituteNibbles: Esta función toma un nibble (4 bits) y una caja S (sBox) como entrada, y realiza una sustitución no lineal utilizando la caja S.  
 - Función permuteNibbles: Esta función toma un nibble y una matriz de MixColumns (mixColumnsMatrix) como entrada, y realiza una permutación utilizando operaciones de multiplicación en el campo de Galois.
+- Función galoisMultiplication: Esta función implementa la multiplicación en el campo de Galois, que es una operación utilizada en varias partes del algoritmo S-AES.
