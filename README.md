@@ -64,3 +64,4 @@ Para materializar el desarrollo del algoritmo en el código Typescript se define
 - Función permuteNibbles: Esta función toma un nibble y una matriz de MixColumns (mixColumnsMatrix) como entrada, y realiza una permutación utilizando operaciones de multiplicación en el campo de Galois.
 - Función galoisMultiplication: Esta función implementa la multiplicación en el campo de Galois, que es una operación utilizada en varias partes del algoritmo S-AES.
 - Funciones de encriptación (encrypt) y desencriptación (decrypt): Estas funciones implementan el proceso principal de encriptación y desencriptación utilizando el algoritmo S-AES. Se utilizan otras funciones y estructuras definidas anteriormente, como la expansión de clave (keyExpansion).
+- Función keyExpansion: Esta función realiza la expansión de clave para generar las claves de ronda utilizadas en el proceso de encriptación y desencriptación.
