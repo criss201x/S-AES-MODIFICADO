@@ -68,3 +68,10 @@ Para materializar el desarrollo del algoritmo en el código Typescript se define
 - Función main: Esta función principal ejecuta el algoritmo S-AES. Define los datos de entrada (plaintext y key), muestra los valores iniciales por consola, realiza la encriptación y desencriptación, y muestra los resultados por consola. 
 
 Inicialmente el texto sin formato se divide en dos nibbles de 8 bits. Un nibble es un grupo de bits de cuatro bits. El texto sin formato es una secuencia de bits y los nibbles son simplemente grupos de cuatro bits de esa secuencia. Por ejemplo, si el texto sin formato es el valor de 16 bits 12345678, entonces los dos nibbles serían 12 y 34. Esto puede representarse en el siguiente pseudocodigo 
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
