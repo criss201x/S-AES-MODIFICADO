@@ -71,7 +71,9 @@ Inicialmente el texto sin formato se divide en dos nibbles de 8 bits. Un nibble 
 
 ```
 function encrypt(plaintext, key): 
-  # Divide el texto sin formato en dos nibbles de 8 bits.
+# Divide el texto sin formato en dos nibbles de 8 bits.
+  nibbles = [plaintext >> 8, plaintext & 0xff] 
 
+# Sustituye cada nible usando una tabla de búsqueda. 
 ```
 
