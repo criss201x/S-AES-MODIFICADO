@@ -74,6 +74,10 @@ function encrypt(plaintext, key):
 # Divide el texto sin formato en dos nibbles de 8 bits.
   nibbles = [plaintext >> 8, plaintext & 0xff] 
 
-# Sustituye cada nible usando una tabla de búsqueda. 
+# Sustituye cada nible usando una tabla de búsqueda.
+  substituted_nibbles = [lookup_table[nibble] for nibble in nibbles] 
+
+# XOR los dos nibles juntos para formar un nuevo valor de 16 bits.
+
 ```
 
