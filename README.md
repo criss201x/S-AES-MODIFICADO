@@ -80,4 +80,3 @@ function encrypt(plaintext, key):
 # XOR los dos nibles juntos para formar un nuevo valor de 16 bits.
 
 ```
-
