@@ -78,5 +78,7 @@ function encrypt(plaintext, key):
   substituted_nibbles = [lookup_table[nibble] for nibble in nibbles] 
 
 # XOR los dos nibles juntos para formar un nuevo valor de 16 bits.
+  ciphertext = substituted_ciphertext[0] ^ substituted_ciphertext[1] 
 
+# Agregue la clave redonda al texto cifrado usando XOR. 
 ```
