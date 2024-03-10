@@ -80,5 +80,8 @@ function encrypt(plaintext, key):
 # XOR los dos nibles juntos para formar un nuevo valor de 16 bits.
   ciphertext = substituted_ciphertext[0] ^ substituted_ciphertext[1] 
 
-# Agregue la clave redonda al texto cifrado usando XOR. 
+# Agregue la clave redonda al texto cifrado usando XOR.
+  ciphertext = ciphertext ^ key 
+
+  return ciphertext 
 ```
