@@ -85,3 +85,5 @@ function encrypt(plaintext, key):
 
   return ciphertext 
 ```
+
+Ahora cada nibble se sustituye mediante una tabla de búsqueda. La tabla de búsqueda es una tabla que contiene una asignación de cada posible nible a un nuevo nible. 
