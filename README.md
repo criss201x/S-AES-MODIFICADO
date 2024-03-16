@@ -88,4 +88,4 @@ function encrypt(plaintext, key):
 
 Ahora cada nibble se sustituye mediante una tabla de búsqueda. La tabla de búsqueda es una tabla que contiene una asignación de cada posible nible a un nuevo nible. El mapeo no es reversible, por lo que este paso del proceso de cifrado es irreversible.  
 
-La tabla de búsqueda se genera mediante un generador de números aleatorios. 
+La tabla de búsqueda se genera mediante un generador de números aleatorios. El generador de números aleatorios garantiza que la tabla de búsqueda sea impredecible y que un atacante no pueda adivinarla.
