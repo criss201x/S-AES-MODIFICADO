@@ -91,4 +91,3 @@ Ahora cada nibble se sustituye mediante una tabla de búsqueda. La tabla de bús
 La tabla de búsqueda se genera mediante un generador de números aleatorios. El generador de números aleatorios garantiza que la tabla de búsqueda sea impredecible y que un atacante no pueda adivinarla.
 
 La tabla de búsqueda se utiliza para sustituir cada nibble en el texto sin formato. La sustitución se realiza buscando el nibble en la tabla de búsqueda y reemplazándolo con el nibble correspondiente en la tabla de búsqueda.  
-
