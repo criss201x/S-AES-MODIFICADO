@@ -97,5 +97,10 @@ function substitute_nibbles(nibbles, lookup_table):
 
 # Create a new list to store the substituted nibbles. 
 
-substituted_nibbles = [] 
+substituted_nibbles = []
+
+# Iterate through the nibbles and substitute each nibble using the lookup table. 
+
+for nibble in nibbles: 
+   substituted_nibbles.append(lookup_table[nibble])
 ```
