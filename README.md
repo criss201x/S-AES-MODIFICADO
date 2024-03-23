@@ -104,4 +104,7 @@ substituted_nibbles = []
 
 for nibble in nibbles: 
    substituted_nibbles.append(lookup_table[nibble])
+  # Return the list of substituted nibbles. 
+  return substituted_nibbles
+
 ```
