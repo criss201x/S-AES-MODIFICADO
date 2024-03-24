@@ -93,6 +93,7 @@ La tabla de búsqueda se genera mediante un generador de números aleatorios. El
 
 La tabla de búsqueda se utiliza para sustituir cada nibble en el texto sin formato. La sustitución se realiza buscando el nibble en la tabla de búsqueda y reemplazándolo con el nibble correspondiente en la tabla de búsqueda.  
 
+
 ```
 function substitute_nibbles(nibbles, lookup_table): 
 
