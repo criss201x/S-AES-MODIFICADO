@@ -109,3 +109,4 @@ for nibble in nibbles:
   return substituted_nibbles
 
 ```
+No incluye todos los detalles del paso, pero es suficiente para dar una idea general de cómo funciona. Los nibbles de texto sin formato son 12 y 34. texto_sin formato_nibbles = [12, 34] 
