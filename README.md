@@ -112,3 +112,6 @@ for nibble in nibbles:
 No incluye todos los detalles del paso, pero es suficiente para dar una idea general de cómo funciona. Los nibbles de texto sin formato son 12 y 34. texto_sin formato_nibbles = [12, 34] 
 
 Como paso siguiente los dos nibbles se unen mediante XOR para formar un nuevo valor de 16 bits. XOR es una operación binaria que toma dos bits y devuelve un nuevo bit basado en los valores de los dos bits de entrada. Si los dos bits de entrada son iguales, el bit de salida es 0. Si los dos bits de entrada son diferentes, el bit de salida es 1.  
+
+
+La operación XOR se usa en el algoritmo S-AES para agregar difusión al proceso de cifrado. La difusión es importante para la seguridad porque dificulta que un atacante encuentre patrones en el texto cifrado. 
