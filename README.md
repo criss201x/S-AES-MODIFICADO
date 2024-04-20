@@ -113,4 +113,29 @@ No incluye todos los detalles del paso, pero es suficiente para dar una idea gen
 
 Como paso siguiente los dos nibbles se unen mediante XOR para formar un nuevo valor de 16 bits. XOR es una operación binaria que toma dos bits y devuelve un nuevo bit basado en los valores de los dos bits de entrada. Si los dos bits de entrada son iguales, el bit de salida es 0. Si los dos bits de entrada son diferentes, el bit de salida es 1.  
 
-La operación XOR se usa en el algoritmo S-AES para agregar difusión al proceso de cifrado. La difusión es importante para la seguridad porque dificulta que un atacante encuentre patrones en el texto cifrado. 
+La operación XOR se usa en el algoritmo S-AES para agregar difusión al proceso de cifrado. La difusión es importante para la seguridad porque dificulta que un atacante encuentre patrones en el texto cifrado. Esto puede ser representado en el siguiente pseudocodigo  
+
+function xor(a, b): 
+
+  # Crea un nuevo bit para almacenar el resultado de la operación XOR. 
+
+  result = 0 
+
+  # Iterar a través de los bits de ayb y XOR juntos. 
+
+  for i in range(len(a)): 
+
+    result = result ^ a[i] ^ b[i] 
+
+  # Retorna el resultado de la operación XOR 
+
+  return result 
+
+la clave redonda se agrega al nuevo valor usando XOR. La clave redonda es un valor de 16 bits que se utiliza para cifrar el texto sin formato. La clave redonda se genera a partir de la clave original utilizando un algoritmo de programación de claves. 
+
+La operación XOR se realiza en el nuevo valor y la clave de ronda tomando cada bit del nuevo valor y haciéndolo XOR con el bit correspondiente de la clave de ronda. El resultado de la operación XOR es un nuevo bit que es 0 o 1. 
+
+Por ejemplo, si el nuevo valor es 02 y la clave redonda es 13, entonces el resultado de la operación XOR es 15. Esto significa que el primer bit del resultado es 1, el segundo bit es 1, el tercer bit es 0, y el cuarto bit es 1. Esto puede ser representado en el siguiente pseudocodigo  
+
+
+
