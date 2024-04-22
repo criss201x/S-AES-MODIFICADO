@@ -138,5 +138,3 @@ La operación XOR se realiza en el nuevo valor y la clave de ronda tomando cada 
 Por ejemplo, si el nuevo valor es 02 y la clave redonda es 13, entonces el resultado de la operación XOR es 15. Esto significa que el primer bit del resultado es 1, el segundo bit es 1, el tercer bit es 0, y el cuarto bit es 1. Esto puede ser representado en el siguiente pseudocodigo  
 
 
-
-
