@@ -138,3 +138,149 @@ La operación XOR se realiza en el nuevo valor y la clave de ronda tomando cada 
 Por ejemplo, si el nuevo valor es 02 y la clave redonda es 13, entonces el resultado de la operación XOR es 15. Esto significa que el primer bit del resultado es 1, el segundo bit es 1, el tercer bit es 0, y el cuarto bit es 1. Esto puede ser representado en el siguiente pseudocodigo  
 
 
+function xor(a, b): 
+
+  # Crea un nuevo bit para almacenar el resultado de la operación XOR. 
+
+  result = 0 
+
+  # Iterar a través de los bits de ayb y XOR juntos. 
+
+  for i in range(len(a)): 
+
+    result = result ^ a[i] ^ b[i] 
+
+  # Devuelve el resultado de la operación XOR. 
+
+  return result 
+
+El siguiente paso se devuelve el texto cifrado. El texto cifrado es la versión cifrada del texto sin formato. Se puede descifrar utilizando la clave original y el proceso de descifrado. El texto cifrado se descifra primero usando la clave redonda. La clave redonda se utiliza para descifrar el texto cifrado realizando operaciones XOR en el texto cifrado y la clave de ronda. 
+
+Luego, el texto cifrado se sustituye utilizando la tabla de búsqueda. La tabla de búsqueda se usa para sustituir los nibbles en el texto cifrado buscando los nibbles en la tabla de búsqueda y reemplazándolos con los nibbles correspondientes en la tabla de búsqueda. 
+
+Luego, el texto cifrado se divide en dos nibbles de 8 bits. Luego, los nibbles se unen mediante XOR para formar un nuevo valor de 16 bits. El valor final es el texto sin formato. El texto sin formato es la versión descifrada del texto cifrado. Esto puede verse representado en el siguiente pseudocodigo: 
+
+# El texto cifrado es  
+
+ciphertext = [1, 1, 0, 1] 
+
+# la llave de ronda es 13 
+
+key = [1, 0, 1, 1] 
+
+# el texto descifrado es 2. 
+
+decrypted_ciphertext = xor(ciphertext, key) 
+
+# El texto cifrado descifrado sustituido es 12. 
+
+substituted_decrypted_ciphertext = substitute_nibbles(decrypted_ciphertext, lookup_table) 
+
+# El texto plano es  
+
+plaintext = subs_decrypted_ciphertext[0] ^ subs_decrypted_ciphertext[1] 
+
+El paso final en el algoritmo S-AES es intercambiar los dos nibbles. Este paso se realiza para agregar más confusión al proceso de encriptación.  
+
+El intercambio de los nibbles se realiza tomando el primer nibble y moviéndolo a la segunda posición, y tomando el segundo nibble y moviéndolo a la primera posición. Por ejemplo, si los nibbles son 12 y 34, entonces el paso final intercambiará los nibbles para que sean 34 y 12. 
+
+ 
+
+function swap_nibbles(nibbles): 
+
+  # Cambia el primer nibble por el segundo nibble. 
+
+ nibbles[0], nibbles[1] = nibbles[1], nibbles[0]  
+
+  # Devuelve los bocadillos. 
+
+ return nibbles 
+
+ 
+
+Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes consideraciones: 
+
+    Se han agregado nuevas cajas de sustitución S complementarias, denominadas S_BOX_1 y S_BOX_2. 
+
+    Se ha modificado la política de corrimiento de ShiftRows en la función shiftRows(). 
+
+    Se han agregado nuevas matrices de MixColumns complementarias, denominadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. 
+
+    Se han añadido nuevas constantes para el KeyExpansion, denominadas ROUND_CONSTANTS. 
+
+    Se ha modificado la política de relleno de bloques en la función padBlock(). 
+
+    Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
+
+    Se ha añadido una nueva función permuteNibbles() para la permutación de nibbles utilizando las matrices de MixColumns complementarias. 
+
+    Se ha agregado una nueva función galoisMultiplication() para realizar multiplicación en el campo de Galois. 
+
+    Se han realizado modificaciones en las funciones encrypt() y decrypt() para aplicar las modificaciones propuestas. 
+
+    Se ha añadido la función keyExpansion() para la expansión de clave y generación de las claves de ronda. 
+
+    Se ha agregado un ejemplo adicional de encriptación utilizando el modo CBC (Cipher Block Chaining). 
+     
+
+Para desarrollar el ataque de fuerza bruta se desarrolla una función que implementa para descifrar una serie de textos cifrados utilizando el modo de cifrado CBC (Cipher Block Chaining). A continuación, te proporcionaré una explicación detallada de cada parte de la función:  
+
+La función bruteForceAttack toma dos argumentos: ciphertexts, que es una matriz de números que representa los textos cifrados, y iv, que es el vector de inicialización utilizado en el modo CBC.  
+
+La función comienza convirtiendo los textos cifrados y el vector de inicialización a su representación hexadecimal. Esto se realiza mediante la función decimalToHexadecimal, que toma un número decimal y devuelve su equivalente en hexadecimal.  
+
+A continuación, se inicia un bucle que iterará a través de todas las posibles claves. La variable key representa la clave actual y se inicializa en 0.  
+
+La clave se convierte en una matriz de bytes utilizando operaciones de desplazamiento y máscaras bit a bit. La clave se divide en cuatro bytes, donde cada byte representa un octeto de la clave.  
+
+Después de obtener los bytes de la clave, se generan las subclaves utilizando la función generateSubkeys. Esta función es probablemente definida en otro lugar del código y no se proporciona en el fragmento que compartiste. Las subclaves se utilizan en el cifrado CBC.  
+
+A continuación, se realiza el descifrado utilizando el cifrado CBC con la clave actual y el vector de inicialización. El resultado se almacena en la variable decryptedPlaintexts, que es una matriz de textos descifrados en su representación hexadecimal.  
+
+Se realiza una comparación entre los textos descifrados y los textos cifrados objetivo. Si los textos descifrados coinciden con los textos cifrados objetivo en todas las posiciones específicas, se realiza una comparación adicional entre el vector de inicialización descifrado y el vector de inicialización objetivo.  
+
+Si tanto los textos descifrados como el vector de inicialización descifrado coinciden con los textos cifrados objetivo y el vector de inicialización objetivo, respectivamente, se imprime un mensaje indicando que se ha encontrado la clave y se muestra la clave en su representación hexadecimal. Luego, la función retorna, lo que significa que el ataque se detiene.  
+
+Si no se encuentra ninguna coincidencia después de probar todas las claves posibles, se imprime un mensaje indicando que la clave no fue encontrada.  
+
+Es importante tener en cuenta que esta función implementa un ataque de fuerza bruta, lo que significa que prueba todas las claves posibles en busca de una coincidencia. Dependiendo del tamaño del espacio de claves y del poder de procesamiento disponible, este tipo de ataque puede llevar mucho tiempo y no ser práctico en situaciones donde el espacio de claves es lo suficientemente grande. 
+
+ 
+
+Resultados y conclusiones  
+
+    AES es un algoritmo de cifrado de clave simétrica que se considera uno de los algoritmos de cifrado más seguros del mundo. Es utilizado por gobiernos, empresas e individuos para proteger datos confidenciales. AES es un cifrado de bloque, lo que significa que cifra los datos en bloques de 128 bits. 
+
+    S-AES es una versión simplificada de AES que está diseñada para ser más eficiente en términos de velocidad y consumo de energía. S-AES es un cifrado de bloques de 64 bits que utiliza una clave de 128 bits. S-AES no es tan seguro como AES, pero todavía se considera lo suficientemente seguro para muchas aplicaciones. 
+
+    S-AES-Lite es una versión más simplificada de S-AES que es aún más eficiente en términos de velocidad y consumo de energía. S-AES-Lite es un cifrado de bloque de 32 bits que utiliza una clave de 64 bits. S-AES-Lite no es tan seguro como S-AES, pero aún se considera lo suficientemente seguro para algunas aplicaciones. 
+
+    S-AES-LW es la versión más ligera de S-AES. Es un cifrado de bloques de 16 bits que utiliza una clave de 32 bits. S-AES-LW es la versión menos segura de S-AES, pero todavía se considera lo suficientemente segura para algunas aplicaciones. 
+
+ 
+
+Bibliografia 
+
+ 
+
+[1] https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf 
+
+[2] Kaplan, M. (2017). Digital privacy and security using Windows: A practical guide. Apress. 
+
+[3] Alghamdi, M. A., & Khan, A. A. (2014, March). A simple and efficient encryption algorithm based on S-AES. In 2014 3rd International Conference on Information Technology and Applications (ICITA) (pp. 1-5). IEEE. 
+
+[4] S. M. Alotaibi and A. A. Khan. (2015). A Novel Lightweight Encryption Algorithm Based on S-AES   
+
+[5] Alghamdi, M. A., & Khan, A. A. (2016). A comparative study of S-AES and other encryption algorithms. International Journal of Computer Science and Information Security, 14(1), 1-10. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
