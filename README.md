@@ -259,9 +259,7 @@ Resultados y conclusiones
 
  
 
-Bibliografia 
-
- 
+Bibliografia  
 
 [1] https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf 
 
