@@ -110,6 +110,7 @@ Como paso siguiente los dos nibbles se unen mediante XOR para formar un nuevo va
 
 La operación XOR se usa en el algoritmo S-AES para agregar difusión al proceso de cifrado. La difusión es importante para la seguridad porque dificulta que un atacante encuentre patrones en el texto cifrado. Esto puede ser representado en el siguiente pseudocodigo  
 
+```
 function xor(a, b): 
 
   # Crea un nuevo bit para almacenar el resultado de la operación XOR. 
@@ -124,7 +125,8 @@ function xor(a, b):
 
   # Retorna el resultado de la operación XOR 
 
-  return result 
+  return result
+```
 
 la clave redonda se agrega al nuevo valor usando XOR. La clave redonda es un valor de 16 bits que se utiliza para cifrar el texto sin formato. La clave redonda se genera a partir de la clave original utilizando un algoritmo de programación de claves. 
 
