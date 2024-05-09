@@ -128,9 +128,7 @@ function xor(a, b):
   return result
 ```
 
-la clave redonda se agrega al nuevo valor usando XOR. La clave redonda es un valor de 16 bits que se utiliza para cifrar el texto sin formato. La clave redonda se genera a partir de la clave original utilizando un algoritmo de programación de claves. 
-
-La operación XOR se realiza en el nuevo valor y la clave de ronda tomando cada bit del nuevo valor y haciéndolo XOR con el bit correspondiente de la clave de ronda. El resultado de la operación XOR es un nuevo bit que es 0 o 1. 
+la clave redonda se agrega al nuevo valor usando XOR. La clave redonda es un valor de 16 bits que se utiliza para cifrar el texto sin formato. La clave redonda se genera a partir de la clave original utilizando un algoritmo de programación de claves. La operación XOR se realiza en el nuevo valor y la clave de ronda tomando cada bit del nuevo valor y haciéndolo XOR con el bit correspondiente de la clave de ronda. El resultado de la operación XOR es un nuevo bit que es 0 o 1. 
 
 Por ejemplo, si el nuevo valor es 02 y la clave redonda es 13, entonces el resultado de la operación XOR es 15. Esto significa que el primer bit del resultado es 1, el segundo bit es 1, el tercer bit es 0, y el cuarto bit es 1. Esto puede ser representado en el siguiente pseudocodigo  
 
