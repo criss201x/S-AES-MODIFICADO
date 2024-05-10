@@ -132,7 +132,7 @@ la clave redonda se agrega al nuevo valor usando XOR. La clave redonda es un val
 
 Por ejemplo, si el nuevo valor es 02 y la clave redonda es 13, entonces el resultado de la operación XOR es 15. Esto significa que el primer bit del resultado es 1, el segundo bit es 1, el tercer bit es 0, y el cuarto bit es 1. Esto puede ser representado en el siguiente pseudocodigo  
 
-
+```
 function xor(a, b): 
 
   # Crea un nuevo bit para almacenar el resultado de la operación XOR. 
@@ -148,6 +148,7 @@ function xor(a, b):
   # Devuelve el resultado de la operación XOR. 
 
   return result 
+```
 
 El siguiente paso se devuelve el texto cifrado. El texto cifrado es la versión cifrada del texto sin formato. Se puede descifrar utilizando la clave original y el proceso de descifrado. El texto cifrado se descifra primero usando la clave redonda. La clave redonda se utiliza para descifrar el texto cifrado realizando operaciones XOR en el texto cifrado y la clave de ronda. 
 
