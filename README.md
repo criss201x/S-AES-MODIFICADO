@@ -155,7 +155,7 @@ El siguiente paso se devuelve el texto cifrado. El texto cifrado es la versión 
 Luego, el texto cifrado se sustituye utilizando la tabla de búsqueda. La tabla de búsqueda se usa para sustituir los nibbles en el texto cifrado buscando los nibbles en la tabla de búsqueda y reemplazándolos con los nibbles correspondientes en la tabla de búsqueda. 
 
 Luego, el texto cifrado se divide en dos nibbles de 8 bits. Luego, los nibbles se unen mediante XOR para formar un nuevo valor de 16 bits. El valor final es el texto sin formato. El texto sin formato es la versión descifrada del texto cifrado. Esto puede verse representado en el siguiente pseudocodigo: 
-
+```
 # El texto cifrado es  
 
 ciphertext = [1, 1, 0, 1] 
@@ -175,6 +175,7 @@ substituted_decrypted_ciphertext = substitute_nibbles(decrypted_ciphertext, look
 # El texto plano es  
 
 plaintext = subs_decrypted_ciphertext[0] ^ subs_decrypted_ciphertext[1] 
+```
 
 El paso final en el algoritmo S-AES es intercambiar los dos nibbles. Este paso se realiza para agregar más confusión al proceso de encriptación.  
 
