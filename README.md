@@ -177,9 +177,7 @@ substituted_decrypted_ciphertext = substitute_nibbles(decrypted_ciphertext, look
 plaintext = subs_decrypted_ciphertext[0] ^ subs_decrypted_ciphertext[1] 
 ```
 
-El paso final en el algoritmo S-AES es intercambiar los dos nibbles. Este paso se realiza para agregar más confusión al proceso de encriptación.  
-
-El intercambio de los nibbles se realiza tomando el primer nibble y moviéndolo a la segunda posición, y tomando el segundo nibble y moviéndolo a la primera posición. Por ejemplo, si los nibbles son 12 y 34, entonces el paso final intercambiará los nibbles para que sean 34 y 12. 
+El paso final en el algoritmo S-AES es intercambiar los dos nibbles. Este paso se realiza para agregar más confusión al proceso de encriptación.  El intercambio de los nibbles se realiza tomando el primer nibble y moviéndolo a la segunda posición, y tomando el segundo nibble y moviéndolo a la primera posición. Por ejemplo, si los nibbles son 12 y 34, entonces el paso final intercambiará los nibbles para que sean 34 y 12. 
 
  
 
