@@ -196,8 +196,7 @@ function swap_nibbles(nibbles):
 Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes consideraciones: 
 
 - Se han agregado nuevas cajas de sustitución S complementarias, denominadas S_BOX_1 y S_BOX_2. 
-
-    Se ha modificado la política de corrimiento de ShiftRows en la función shiftRows(). 
+- Se ha modificado la política de corrimiento de ShiftRows en la función shiftRows(). 
 
     Se han agregado nuevas matrices de MixColumns complementarias, denominadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. 
 
