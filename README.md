@@ -155,6 +155,7 @@ El siguiente paso se devuelve el texto cifrado. El texto cifrado es la versión 
 Luego, el texto cifrado se sustituye utilizando la tabla de búsqueda. La tabla de búsqueda se usa para sustituir los nibbles en el texto cifrado buscando los nibbles en la tabla de búsqueda y reemplazándolos con los nibbles correspondientes en la tabla de búsqueda. 
 
 Luego, el texto cifrado se divide en dos nibbles de 8 bits. Luego, los nibbles se unen mediante XOR para formar un nuevo valor de 16 bits. El valor final es el texto sin formato. El texto sin formato es la versión descifrada del texto cifrado. Esto puede verse representado en el siguiente pseudocodigo: 
+
 ```
 # El texto cifrado es  
 
@@ -197,8 +198,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 
 - Se han agregado nuevas cajas de sustitución S complementarias, denominadas S_BOX_1 y S_BOX_2. 
 - Se ha modificado la política de corrimiento de ShiftRows en la función shiftRows(). 
-
-    Se han agregado nuevas matrices de MixColumns complementarias, denominadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. 
+- Se han agregado nuevas matrices de MixColumns complementarias, denominadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. 
 
     Se han añadido nuevas constantes para el KeyExpansion, denominadas ROUND_CONSTANTS. 
 
