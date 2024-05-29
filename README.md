@@ -200,8 +200,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se ha modificado la política de corrimiento de ShiftRows en la función shiftRows(). 
 - Se han agregado nuevas matrices de MixColumns complementarias, denominadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. 
 - Se han añadido nuevas constantes para el KeyExpansion, denominadas ROUND_CONSTANTS. 
-
-    Se ha modificado la política de relleno de bloques en la función padBlock(). 
+- Se ha modificado la política de relleno de bloques en la función padBlock(). 
 
     Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
 
