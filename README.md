@@ -201,8 +201,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se han agregado nuevas matrices de MixColumns complementarias, denominadas MIX_COLUMNS_MATRIX_1 y MIX_COLUMNS_MATRIX_2. 
 - Se han añadido nuevas constantes para el KeyExpansion, denominadas ROUND_CONSTANTS. 
 - Se ha modificado la política de relleno de bloques en la función padBlock(). 
-
-    Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
+- Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
 
     Se ha añadido una nueva función permuteNibbles() para la permutación de nibbles utilizando las matrices de MixColumns complementarias. 
 
