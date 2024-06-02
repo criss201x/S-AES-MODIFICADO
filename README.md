@@ -202,8 +202,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se han añadido nuevas constantes para el KeyExpansion, denominadas ROUND_CONSTANTS. 
 - Se ha modificado la política de relleno de bloques en la función padBlock(). 
 - Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
-
-    Se ha añadido una nueva función permuteNibbles() para la permutación de nibbles utilizando las matrices de MixColumns complementarias. 
+- Se ha añadido una nueva función permuteNibbles() para la permutación de nibbles utilizando las matrices de MixColumns complementarias. 
 
     Se ha agregado una nueva función galoisMultiplication() para realizar multiplicación en el campo de Galois. 
 
