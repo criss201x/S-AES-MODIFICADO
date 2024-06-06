@@ -203,8 +203,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se ha modificado la política de relleno de bloques en la función padBlock(). 
 - Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
 - Se ha añadido una nueva función permuteNibbles() para la permutación de nibbles utilizando las matrices de MixColumns complementarias. 
-
-    Se ha agregado una nueva función galoisMultiplication() para realizar multiplicación en el campo de Galois. 
+- Se ha agregado una nueva función galoisMultiplication() para realizar multiplicación en el campo de Galois. 
 
     Se han realizado modificaciones en las funciones encrypt() y decrypt() para aplicar las modificaciones propuestas. 
 
