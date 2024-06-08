@@ -204,8 +204,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se ha agregado una nueva función substituteNibbles() para la sustitución no lineal utilizando una caja S complementaria. 
 - Se ha añadido una nueva función permuteNibbles() para la permutación de nibbles utilizando las matrices de MixColumns complementarias. 
 - Se ha agregado una nueva función galoisMultiplication() para realizar multiplicación en el campo de Galois. 
-
-    Se han realizado modificaciones en las funciones encrypt() y decrypt() para aplicar las modificaciones propuestas. 
+- Se han realizado modificaciones en las funciones encrypt() y decrypt() para aplicar las modificaciones propuestas. 
 
     Se ha añadido la función keyExpansion() para la expansión de clave y generación de las claves de ronda. 
 
