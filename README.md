@@ -208,12 +208,9 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se ha añadido la función keyExpansion() para la expansión de clave y generación de las claves de ronda. 
 - Se ha agregado un ejemplo adicional de encriptación utilizando el modo CBC (Cipher Block Chaining). 
      
-
 Para desarrollar el ataque de fuerza bruta se desarrolla una función que implementa para descifrar una serie de textos cifrados utilizando el modo de cifrado CBC (Cipher Block Chaining). A continuación, te proporcionaré una explicación detallada de cada parte de la función:  
 
-La función bruteForceAttack toma dos argumentos: ciphertexts, que es una matriz de números que representa los textos cifrados, y iv, que es el vector de inicialización utilizado en el modo CBC.  
-
-La función comienza convirtiendo los textos cifrados y el vector de inicialización a su representación hexadecimal. Esto se realiza mediante la función decimalToHexadecimal, que toma un número decimal y devuelve su equivalente en hexadecimal.  
+La función bruteForceAttack toma dos argumentos: ciphertexts, que es una matriz de números que representa los textos cifrados, y iv, que es el vector de inicialización utilizado en el modo CBC. La función comienza convirtiendo los textos cifrados y el vector de inicialización a su representación hexadecimal. Esto se realiza mediante la función decimalToHexadecimal, que toma un número decimal y devuelve su equivalente en hexadecimal.  
 
 A continuación, se inicia un bucle que iterará a través de todas las posibles claves. La variable key representa la clave actual y se inicializa en 0.  
 
