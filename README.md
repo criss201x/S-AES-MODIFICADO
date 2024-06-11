@@ -206,8 +206,7 @@ Para el desarrollo del algoritmo modificado se tienen en cuenta las siguientes c
 - Se ha agregado una nueva función galoisMultiplication() para realizar multiplicación en el campo de Galois. 
 - Se han realizado modificaciones en las funciones encrypt() y decrypt() para aplicar las modificaciones propuestas. 
 - Se ha añadido la función keyExpansion() para la expansión de clave y generación de las claves de ronda. 
-
-    Se ha agregado un ejemplo adicional de encriptación utilizando el modo CBC (Cipher Block Chaining). 
+- Se ha agregado un ejemplo adicional de encriptación utilizando el modo CBC (Cipher Block Chaining). 
      
 
 Para desarrollar el ataque de fuerza bruta se desarrolla una función que implementa para descifrar una serie de textos cifrados utilizando el modo de cifrado CBC (Cipher Block Chaining). A continuación, te proporcionaré una explicación detallada de cada parte de la función:  
