@@ -223,9 +223,9 @@ Si no se encuentra ninguna coincidencia después de probar todas las claves posi
 
  
 
-Resultados y conclusiones  
+## Resultados y conclusiones  
 
-    AES es un algoritmo de cifrado de clave simétrica que se considera uno de los algoritmos de cifrado más seguros del mundo. Es utilizado por gobiernos, empresas e individuos para proteger datos confidenciales. AES es un cifrado de bloque, lo que significa que cifra los datos en bloques de 128 bits. 
+- AES es un algoritmo de cifrado de clave simétrica que se considera uno de los algoritmos de cifrado más seguros del mundo. Es utilizado por gobiernos, empresas e individuos para proteger datos confidenciales. AES es un cifrado de bloque, lo que significa que cifra los datos en bloques de 128 bits. 
 
     S-AES es una versión simplificada de AES que está diseñada para ser más eficiente en términos de velocidad y consumo de energía. S-AES es un cifrado de bloques de 64 bits que utiliza una clave de 128 bits. S-AES no es tan seguro como AES, pero todavía se considera lo suficientemente seguro para muchas aplicaciones. 
 
