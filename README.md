@@ -104,6 +104,7 @@ for nibble in nibbles:
   return substituted_nibbles
 
 ```
+
 No incluye todos los detalles del paso, pero es suficiente para dar una idea general de cómo funciona. Los nibbles de texto sin formato son 12 y 34. texto_sin formato_nibbles = [12, 34] 
 
 Como paso siguiente los dos nibbles se unen mediante XOR para formar un nuevo valor de 16 bits. XOR es una operación binaria que toma dos bits y devuelve un nuevo bit basado en los valores de los dos bits de entrada. Si los dos bits de entrada son iguales, el bit de salida es 0. Si los dos bits de entrada son diferentes, el bit de salida es 1.  
@@ -212,21 +213,13 @@ Para desarrollar el ataque de fuerza bruta se desarrolla una función que implem
 
 La función bruteForceAttack toma dos argumentos: ciphertexts, que es una matriz de números que representa los textos cifrados, y iv, que es el vector de inicialización utilizado en el modo CBC. La función comienza convirtiendo los textos cifrados y el vector de inicialización a su representación hexadecimal. Esto se realiza mediante la función decimalToHexadecimal, que toma un número decimal y devuelve su equivalente en hexadecimal.  
 
-A continuación, se inicia un bucle que iterará a través de todas las posibles claves. La variable key representa la clave actual y se inicializa en 0.  
+A continuación, se inicia un bucle que iterará a través de todas las posibles claves. La variable key representa la clave actual y se inicializa en 0. La clave se convierte en una matriz de bytes utilizando operaciones de desplazamiento y máscaras bit a bit. La clave se divide en cuatro bytes, donde cada byte representa un octeto de la clave.  
 
-La clave se convierte en una matriz de bytes utilizando operaciones de desplazamiento y máscaras bit a bit. La clave se divide en cuatro bytes, donde cada byte representa un octeto de la clave.  
+Después de obtener los bytes de la clave, se generan las subclaves utilizando la función generateSubkeys. Esta función es probablemente definida en otro lugar del código y no se proporciona en el fragmento que compartiste. Las subclaves se utilizan en el cifrado CBC. A continuación, se realiza el descifrado utilizando el cifrado CBC con la clave actual y el vector de inicialización. El resultado se almacena en la variable decryptedPlaintexts, que es una matriz de textos descifrados en su representación hexadecimal.  
 
-Después de obtener los bytes de la clave, se generan las subclaves utilizando la función generateSubkeys. Esta función es probablemente definida en otro lugar del código y no se proporciona en el fragmento que compartiste. Las subclaves se utilizan en el cifrado CBC.  
+Se realiza una comparación entre los textos descifrados y los textos cifrados objetivo. Si los textos descifrados coinciden con los textos cifrados objetivo en todas las posiciones específicas, se realiza una comparación adicional entre el vector de inicialización descifrado y el vector de inicialización objetivo. Si tanto los textos descifrados como el vector de inicialización descifrado coinciden con los textos cifrados objetivo y el vector de inicialización objetivo, respectivamente, se imprime un mensaje indicando que se ha encontrado la clave y se muestra la clave en su representación hexadecimal. Luego, la función retorna, lo que significa que el ataque se detiene.  
 
-A continuación, se realiza el descifrado utilizando el cifrado CBC con la clave actual y el vector de inicialización. El resultado se almacena en la variable decryptedPlaintexts, que es una matriz de textos descifrados en su representación hexadecimal.  
-
-Se realiza una comparación entre los textos descifrados y los textos cifrados objetivo. Si los textos descifrados coinciden con los textos cifrados objetivo en todas las posiciones específicas, se realiza una comparación adicional entre el vector de inicialización descifrado y el vector de inicialización objetivo.  
-
-Si tanto los textos descifrados como el vector de inicialización descifrado coinciden con los textos cifrados objetivo y el vector de inicialización objetivo, respectivamente, se imprime un mensaje indicando que se ha encontrado la clave y se muestra la clave en su representación hexadecimal. Luego, la función retorna, lo que significa que el ataque se detiene.  
-
-Si no se encuentra ninguna coincidencia después de probar todas las claves posibles, se imprime un mensaje indicando que la clave no fue encontrada.  
-
-Es importante tener en cuenta que esta función implementa un ataque de fuerza bruta, lo que significa que prueba todas las claves posibles en busca de una coincidencia. Dependiendo del tamaño del espacio de claves y del poder de procesamiento disponible, este tipo de ataque puede llevar mucho tiempo y no ser práctico en situaciones donde el espacio de claves es lo suficientemente grande. 
+Si no se encuentra ninguna coincidencia después de probar todas las claves posibles, se imprime un mensaje indicando que la clave no fue encontrada.  Es importante tener en cuenta que esta función implementa un ataque de fuerza bruta, lo que significa que prueba todas las claves posibles en busca de una coincidencia. Dependiendo del tamaño del espacio de claves y del poder de procesamiento disponible, este tipo de ataque puede llevar mucho tiempo y no ser práctico en situaciones donde el espacio de claves es lo suficientemente grande. 
 
  
 
