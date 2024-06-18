@@ -228,8 +228,7 @@ Si no se encuentra ninguna coincidencia después de probar todas las claves posi
 - AES es un algoritmo de cifrado de clave simétrica que se considera uno de los algoritmos de cifrado más seguros del mundo. Es utilizado por gobiernos, empresas e individuos para proteger datos confidenciales. AES es un cifrado de bloque, lo que significa que cifra los datos en bloques de 128 bits. 
 - S-AES es una versión simplificada de AES que está diseñada para ser más eficiente en términos de velocidad y consumo de energía. S-AES es un cifrado de bloques de 64 bits que utiliza una clave de 128 bits. S-AES no es tan seguro como AES, pero todavía se considera lo suficientemente seguro para muchas aplicaciones. 
 - S-AES-Lite es una versión más simplificada de S-AES que es aún más eficiente en términos de velocidad y consumo de energía. S-AES-Lite es un cifrado de bloque de 32 bits que utiliza una clave de 64 bits. S-AES-Lite no es tan seguro como S-AES, pero aún se considera lo suficientemente seguro para algunas aplicaciones. 
-
-    S-AES-LW es la versión más ligera de S-AES. Es un cifrado de bloques de 16 bits que utiliza una clave de 32 bits. S-AES-LW es la versión menos segura de S-AES, pero todavía se considera lo suficientemente segura para algunas aplicaciones. 
+- S-AES-LW es la versión más ligera de S-AES. Es un cifrado de bloques de 16 bits que utiliza una clave de 32 bits. S-AES-LW es la versión menos segura de S-AES, pero todavía se considera lo suficientemente segura para algunas aplicaciones. 
 
  
 
