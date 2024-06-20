@@ -233,7 +233,7 @@ Si no se encuentra ninguna coincidencia después de probar todas las claves posi
 
 ## Bibliografia  
 
-[1] https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf 
+- [1] https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf 
 
 [2] Kaplan, M. (2017). Digital privacy and security using Windows: A practical guide. Apress. 
 
