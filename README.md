@@ -236,7 +236,6 @@ Si no se encuentra ninguna coincidencia después de probar todas las claves posi
 - [1] https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf 
 - [2] Kaplan, M. (2017). Digital privacy and security using Windows: A practical guide. Apress. 
 - [3] Alghamdi, M. A., & Khan, A. A. (2014, March). A simple and efficient encryption algorithm based on S-AES. In 2014 3rd International Conference on Information Technology and Applications (ICITA) (pp. 1-5). IEEE. 
-
-[4] S. M. Alotaibi and A. A. Khan. (2015). A Novel Lightweight Encryption Algorithm Based on S-AES   
+- [4] S. M. Alotaibi and A. A. Khan. (2015). A Novel Lightweight Encryption Algorithm Based on S-AES   
 
 [5] Alghamdi, M. A., & Khan, A. A. (2016). A comparative study of S-AES and other encryption algorithms. International Journal of Computer Science and Information Security, 14(1), 1-10. 
